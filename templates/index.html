@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Phishing URL Detector</title>
+</head>
+<body>
+    <h2>Enter a URL to Check</h2>
+    <form method="POST">
+        <input type="text" name="url" placeholder="https://example.com" required>
+        <input type="submit" value="Check">
+    </form>
+    {% if result %}
+        <h3>Result: {{ result }}</h3>
+    {% endif %}
+</body>
+</html>
